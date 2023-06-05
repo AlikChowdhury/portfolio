@@ -2,24 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Alik Website</title>
     </head>
+    <style>
+        h1{color: rgb(84, 77, 77); text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        h2{}
+        h3{font-size: 2rem;
+            color: blueviolet;}
+        body{background-color: rgb(197, 194, 194);}
+        img{border-radius: 10px;
+            border:10px solid rgb(139, 190, 212)}
+        footer{
+            float:right;
+        }
+        .project-list{
+            display: flex;
+            gap:5%
+        }
+        @media(max-width:700px){
+            .project-list{
+                display: flex;
+                flex-direction: column;
+            }
+            img{width:75%;
+                min-width: 200px;}
+            }
+        
+        
+    </style>
 
     <body>
+    <ul>
         <h1>Alik Chowdhury's Portfolio</h1>
-        <h2>I'm a Web Developer</h2><br />
+        <h2>I'm a Web Developer;</h2>
+        
         <hr />
-        <h2> Here are few of my projects:</h2>
-        <h3><a href="./Movie project/movierank.html">Movie Ranking Project</a></h3>
+        <br />
+        <h3>Have a look on few of my projects:</h3>
+    <div class="project-list">
+        <div>
+        <li><h3><a href="./Movie project/movierank.html">Movie Ranking Project</a></h3></li>
         <a href="./Movie project/movierank.html"><img src="./Movie project/screenshotmovie.png" width="350" height="400" alt="screen shot of movie project"></a><br />
         <hr />
- 
-        <h3><a href="./Birthday project/birthday project.html">Birthday Invite Project</a></h3>
+        </div>
+        <div> 
+        <li><h3><a href="./Birthday project/birthday project.html">Birthday Invite Project</a></h3></li>
         <a href="./Birthday project/birthday project.html"><img src="./Birthday project/screenshotbirthday.png" height="400" width="350" alt="screenshot of birthday project"></a><br />
         <hr/>
+        </div>
+    </div>
+        <footer>
         <a href="./About me/Alik.CV-1.pdf">About me</a>
         <a href="./About me/Contact me.txt">Contact me</a>
-
+        </footer>
+    </ul>
 
 
 
